@@ -1,0 +1,14 @@
+include:
+  - example-configs/qubes-os-r4.3.yml
+
+executor:
+  type: docker
+  options:
+    image: "qubes-builder-fedora:latest"
+
+use-qubes-repo:
+  version: "4.3"
+
+iso:
+  kickstart: ./kde.ks
+  flavor: kde
